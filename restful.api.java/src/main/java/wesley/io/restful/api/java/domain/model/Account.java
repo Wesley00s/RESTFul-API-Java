@@ -20,7 +20,48 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private String accountNumber;
     private String agency;
     private BigDecimal balance;
-    private BigDecimal limit;
+    private BigDecimal accountLimit;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAgency() {
+        return agency;
+    }
+
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
+    public BigDecimal getAccountLimit() {
+        return accountLimit;
+    }
+
+    public void setAccountLimit(BigDecimal accountLimit) {
+        this.accountLimit = accountLimit;
+    }
 }
